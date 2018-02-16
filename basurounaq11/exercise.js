@@ -30,7 +30,7 @@ exercise.checkWallCollision = function() {
     // reset the direction of motion if wall is hit
     // you need to take into account image width
     // wall is at 800px and image width is 200px, so the last valid value of x is 600px before we need to reverse direction
-    if (exercise.pos.x > (800 - 200){
+    if (exercise.pos.x > (800 - 200)){
     	exercise.increment = -20;
     }
     if (exercise.pos.x < 0){
@@ -41,7 +41,7 @@ exercise.checkWallCollision = function() {
 exercise.chooseImage = function() {
     // choose between all 4 images
     if (exercise.increment > 0) {
-        if (exercise.flag == 1) {
+        if (exercise.flag === 1) {
     		exercise.img1.src = 'PacMan1.png';
     		exercise.flag = 0;
         } else {
@@ -49,7 +49,7 @@ exercise.chooseImage = function() {
     		exercise.flag = 1;
         }
     } else if (exercise.increment < 0) {
-        if (exercise.flag == 1) {
+        if (exercise.flag === 1) {
         	exercise.img1.src = 'PacMan3.png';
     		exercise.flag = 0;
         } else {
